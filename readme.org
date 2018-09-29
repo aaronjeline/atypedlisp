@@ -1,0 +1,4 @@
+#+TITLE: A Typed Lisp
+
+* Goals
+This is a toy Lisp implementation that has a static type system
