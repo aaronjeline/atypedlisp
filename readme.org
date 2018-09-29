@@ -15,10 +15,16 @@ This is a toy Lisp implementation that has a static type system
 * Language Description
 /atypedlisp/ is a Lisp language, so it used S-expressions. ~(f x y)~ applies the function ~f~ to the arguments ~x~ and ~y~. 
 
-Data type: 
+** Data types: 
 - Number
 - Boolean (~#t~ or ~#f~)
 - Strings (quoted text)
 - Lists (they exist but almost certainly make the type system choke)
 - Functions
+  
+** Forms:
+   - *let*: ~(let (varname expr1) (expr2))~, Bind expr1 to varname and evaluate expr2 in that environment.
+   - *define*: Two forms ~(define name value)~, Evaluate value and bind to name in the global namespace
+              ~(define (name args) body)~, shorthand for ~(define name (lambda args body))~
+   - *if*: ~(if cond if-true if-false)~, Evalues cond, if the result is ~#t~, if-true is evaluated, otherwise, if-false is evaluated.
 
