@@ -2,3 +2,23 @@
 
 * Goals
 This is a toy Lisp implementation that has a static type system
+** What works
+- Turing Complete :D
+- Simple static type checking for all calls.
+- Function and variable types are inferred.
+** To Do
+- Add structures to the language
+- Add abstract data types to the type system
+- Better Error Messages
+- Move to hashmap dictionary implementation
+
+* Language Description
+/atypedlisp/ is a Lisp language, so it used S-expressions. ~(f x y)~ applies the function ~f~ to the arguments ~x~ and ~y~. 
+
+Data type: 
+- Number
+- Boolean (~#t~ or ~#f~)
+- Strings (quoted text)
+- Lists (they exist but almost certainly make the type system choke)
+- Functions
+
