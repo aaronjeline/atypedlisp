@@ -8,9 +8,10 @@ This is a toy Lisp implementation that has a static type system
 - Function and variable types are inferred.
 ** To Do
 - Add structures to the language
-- Add abstract data types to the type system
+- Add abstract data types to the type system (oof)
 - Better Error Messages
 - Move to hashmap dictionary implementation
+- Allow for mutually recursive definitions
 
 * Language Description
 /atypedlisp/ is a Lisp language, so it used S-expressions. ~(f x y)~ applies the function ~f~ to the arguments ~x~ and ~y~. 
